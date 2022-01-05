@@ -1,38 +1,206 @@
-.App {
-  text-align: center;
+body {
+    background-color: #99d2ff;
+    display: flex !important;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.questions-container{
+    background-color: #3f4964;
+    width: 490px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+  rgba(0, 0, 0, 0.12) 0px -12px 30px,
+  rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+  rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+  rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.questions-container > h1 {
+    font-size: 18px;
+    color: white;
+}
+
+.questions-container > h3 {
+    font-size: 14px;
+    color: white;
+    opacity: 0.5;
+    width: 480px;
+    padding: 10px 5px;
+}
+
+.Current-State {
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.form-radio-group {
+    width: 480px !important;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    margin-bottom:5px;
+    margin-left: 0px !important;
+    width: 480px !important;
+    border-radius: 10px;
+    border: 2px solid rgb(50 42 92 / 16%);
+    color: white;
+    transition: 0.1s;
+}
+
+.form-label:hover {
+    background-color: #000;
+    color: #fff;
+    opacity: .5;
+}
+
+.submit-btn{
+    background-color: rgb(50 42 92 / 16%);
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom:5px;
+    margin-left: 0px !important;
+    width: 480px !important;
+    border: 2px solid rgb(50 42 92 / 16%);
+
+    border-radius: 10px;
+    color: white;
+    transition: 0.1s;   
+}
+
+@media screen and (max-width: 500px) {
+
+    .questions-container{
+        width: 400px;
+        padding: 20px;
+    }
+    .questions-container > h3 {
+        font-size: 14px;
+        color: white;
+        opacity: 0.5;
+        width: 395px;
+    }
+    .Current-State {
+        font-size: 25px;
+        margin-left: 15px;
+    }
+    
+    .form-radio-group {
+        width: 395px !important;
+        margin-bottom: 15px;
+    }
+    
+    .form-label {
+        margin-bottom:2px;
+        width: 395px !important;
+    }
+    
+    .submit-btn{
+        background-color: rgb(50 42 92 / 16%);
+        padding: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom:5px;
+        margin-left: 0px !important;
+        width: 395px !important;
+        border: 2px solid rgb(50 42 92 / 16%);
+    }
+    
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  @media screen and (max-width: 400px) {
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    .questions-container{
+        width: 350px;
+        padding: 10px;
+    }
+    .questions-container > h3 {
+        font-size: 14px;
+        opacity: 0.5;
+        width: 350px;
+    }
+    .Current-State {
+        font-size: 25px;
+        margin-left: 15px;
+    }
+    
+    .form-radio-group {
+        width: 350px !important;
+        margin-bottom: 15px;
+    }
+    
+    .form-label {
+        margin-bottom:2px;
+        width: 350px !important;
+    }
+    
+    .submit-btn{
+        background-color: rgb(50 42 92 / 16%);
+        padding: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom:5px;
+        margin-left: 0px !important;
+        width: 350px !important;
+        border: 2px solid rgb(50 42 92 / 16%);
+    }
+    
   }
-  to {
-    transform: rotate(360deg);
+
+  @media screen and (max-width: 360px) {
+
+    .questions-container{
+        width: 300px;
+        padding: 10px;
+    }
+    .questions-container > h3 {
+        font-size: 12px;
+        opacity: 0.5;
+        width: 295px !important;
+
+    }
+    .Current-State {
+        font-size: 25px;
+        margin-left: 15px;
+    }
+    
+    .form-radio-group {
+        width: 295px !important;
+        margin-bottom: 15px;
+    }
+    
+    .form-label {
+        margin-bottom:2px;
+        width: 295px !important;
+        font-size: 10px !important;
+    }
+    
+    .submit-btn{
+        background-color: rgb(50 42 92 / 16%);
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom:5px;
+        margin-left: 0px !important;
+        width: 295px !important;
+        border: 2px solid rgb(50 42 92 / 16%);
+    }
+    
   }
+
+/* result css  */
+
+.Result {
+    padding: 50px;
+    background-color: #3f4964;
+    color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
+
